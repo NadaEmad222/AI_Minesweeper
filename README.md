@@ -45,10 +45,10 @@ sequence of actions by your program is:
    <sub>  *The function takes as input a state, returns true if the input state has no more mines to collect (the list of mines is empty), and false otherwise.*</sub> 
 
     8. search::[MyState]->MyState
-    *The function takes as input a list of states. It checks if the head of the input list is a goal state, if it is a goal, it returns the head. Otherwise, it gets the next states from the state at head of the input list, and calls itself recursively with the result of concatenating the tail of the input list with the resulting next states (take care that the order of the concatenation here is important, the next states must be placed by the end of the list).*
+   <sub>  *The function takes as input a list of states. It checks if the head of the input list is a goal state, if it is a goal, it returns the head. Otherwise, it gets the next states from the state at head of the input list, and calls itself recursively with the result of concatenating the tail of the input list with the resulting next states (take care that the order of the concatenation here is important, the next states must be placed by the end of the list).*</sub> 
 
     9. constructSolution:: MyState ->[String]
-    *The function takes as input a state and returns a set of strings representing actions that the robot can follow to reach the input state from the initial state. The possible strings in the output list of strings are only "up", "down", "left", "right", and "collect".*
+    <sub> *The function takes as input a state and returns a set of strings representing actions that the robot can follow to reach the input state from the initial state. The possible strings in the output list of strings are only "up", "down", "left", "right", and "collect".*</sub> 
 
     10. solve :: Cell->[Cell]->[String] 
-    *The function takes as input a cell representing the starting position of the robot, a set of cells representing the positions of the mines, and returns a set of strings representing actions that the robot can follow to reach a goal state from the initial state.*
+   <sub>  *The function takes as input a cell representing the starting position of the robot, a set of cells representing the positions of the mines, and returns a set of strings representing actions that the robot can follow to reach a goal state from the initial state.*</sub> 
