@@ -27,22 +27,22 @@ sequence of actions by your program is:
     *The function takes as input a state and returns the state resulting from moving up from the input state. If up will result in going out of the boundaries of the grid, Null should be returned.*
 
     2. down:: MyState -> MyState
-    *The function takes as input a state and returns the state resulting from moving down from the input state. If down will result in going out of the boundaries of the grid, Null should be returned.*
+   <sub>  *The function takes as input a state and returns the state resulting from moving down from the input state. If down will result in going out of the boundaries of the grid, Null should be returned.*</sub> 
 
     3. left:: MyState -> MyState
-    *The function takes as input a state and returns the state resulting from moving left from the input state. If left will result in going out of the boundaries of the grid, Null should be returned.*
+    <sub> *The function takes as input a state and returns the state resulting from moving left from the input state. If left will result in going out of the boundaries of the grid, Null should be returned.*</sub> 
 
     4. right:: MyState -> MyState
-    *The function takes as input a state and returns the state resulting from moving right from the input state. If right will result in going out of the boundaries of the grid, Null should be returned.*
+    <sub> *The function takes as input a state and returns the state resulting from moving right from the input state. If right will result in going out of the boundaries of the grid, Null should be returned.*</sub> 
 
     5. collect:: MyState -> MyState
-    *The function takes as input a state and returns the state resulting from collecting from the input state. Collecting should not change the position of the robot, but removes the collected mine from the list of mines to be collected. If the robot is not in the same position as one of the mines, Null should be returned.*
+    <sub> *The function takes as input a state and returns the state resulting from collecting from the input state. Collecting should not change the position of the robot, but removes the collected mine from the list of mines to be collected. If the robot is not in the same position as one of the mines, Null should be returned.*</sub> 
 
     6. nextMyStates::MyState->[MyState]
-    *The function takes as input a state and returns the set of states resulting from applying up, down, left, right, and collect from the input state. The output set of states should not contain any Null states.*
+    <sub> *The function takes as input a state and returns the set of states resulting from applying up, down, left, right, and collect from the input state. The output set of states should not contain any Null states.*</sub> 
 
     7. isGoal::MyState->Bool
-    *The function takes as input a state, returns true if the input state has no more mines to collect (the list of mines is empty), and false otherwise.*
+   <sub>  *The function takes as input a state, returns true if the input state has no more mines to collect (the list of mines is empty), and false otherwise.*</sub> 
 
     8. search::[MyState]->MyState
     *The function takes as input a list of states. It checks if the head of the input list is a goal state, if it is a goal, it returns the head. Otherwise, it gets the next states from the state at head of the input list, and calls itself recursively with the result of concatenating the tail of the input list with the resulting next states (take care that the order of the concatenation here is important, the next states must be placed by the end of the list).*
